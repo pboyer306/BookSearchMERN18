@@ -28,7 +28,7 @@ Use the bash command npm run start for local hosting. Deploy in Render after set
 Please feel free to reach out to me in my contact information, or submit a pull request.
 
 ## Special Thanks
-Thanks to googleAI to helping me figure out these render errors. Also a huge thanks to StackOverflow and Reddit forums for helping fix the erros once I understood them.
+Thanks to googleAI to helping me figure out these render errors. Also a huge thanks to StackOverflow and Reddit forums for helping fix the erros once I understood them.git add
 
 ## License
 

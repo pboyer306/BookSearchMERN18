@@ -1,14 +1,18 @@
 {
-  "extends": "../tsconfig.json", 
   "compilerOptions": {
-    "rootDir": "src", // Make sure source files are under src
-    "outDir": "dist", // All compiled files go into dist
-    "esModuleInterop": true, // Allow better compatibility with imports
-    "skipLibCheck": true, // Skip checking lib files for speed
-    "noImplicitAny": true, // Optional: helps catch potential issues early
-    "moduleResolution": "node", // Use Node-style module resolution
-    "target": "ES6" // Or higher version if needed
+    "outDir": "./dist",           // Output directory for compiled files
+    "rootDir": "./src",           // Root directory for source files
+    "moduleResolution": "node",   // Use Node-style module resolution
+    "esModuleInterop": true,      // Allow default imports from non-ESM modules
+    "target": "ES6",              // Specify ECMAScript target version
+    "module": "CommonJS",         // Use CommonJS module system (for Node.js)
+    "strict": true                // Enable strict type-checking options
   },
-  "include": ["src"], // Ensure all files under src are included
-  "typeRoots": ["./node_modules/@types", "./src/types"] // Include custom types
+  "include": [
+    "src/**/*"                     // Include all files in the src folder
+  ],
+  "exclude": [
+    "node_modules",                // Exclude node_modules
+    "dist"                         // Exclude the dist folder where compiled files will go
+  ]
 }
