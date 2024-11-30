@@ -1,13 +1,14 @@
 {
-  "extends": "../tsconfig.json",
+  "extends": "../tsconfig.json", 
   "compilerOptions": {
-    /* Modules */
-    "rootDir": "src" /* Specify the root folder within your source files. */,
-
-    /* Emit */
-    "outDir": "dist" /* Specify an output folder for all emitted files. */
-    // "noEmitOnError": true /* Disable emitting files if any type checking errors are reported. */
+    "rootDir": "src", // Make sure source files are under src
+    "outDir": "dist", // All compiled files go into dist
+    "esModuleInterop": true, // Allow better compatibility with imports
+    "skipLibCheck": true, // Skip checking lib files for speed
+    "noImplicitAny": true, // Optional: helps catch potential issues early
+    "moduleResolution": "node", // Use Node-style module resolution
+    "target": "ES6" // Or higher version if needed
   },
-  "include": ["src"],
-  "typeRoots": ["./node_modules/@types", "./src/types"]
+  "include": ["src"], // Ensure all files under src are included
+  "typeRoots": ["./node_modules/@types", "./src/types"] // Include custom types
 }
