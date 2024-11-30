@@ -1,25 +1,31 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
-    "module": "ESNext",
-    "moduleResolution": "Node",   // Change from Bundler to Node
-    "skipLibCheck": true,
-    "allowJs": true,
-    "checkJs": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "forceConsistentCasingInFileNames": true,
-    "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true,
-    "exactOptionalPropertyTypes": true,
-    "noImplicitReturns": true,
-    "noImplicitOverride": true,
-    "useUnknownInCatchVariables": true,
-    "rootDir": "server/src",      // Specify the source folder
-    "outDir": "dist"              // Specify the output folder
+    "target": "ES2020",                              // Set the JavaScript language version for emitted JavaScript
+    "module": "ESNext",                              // Specify module system
+    "moduleResolution": "Bundler",                   // Use bundler for module resolution
+    "skipLibCheck": true,                            // Skip type checking of declaration files (faster compilation)
+    "allowJs": true,                                 // Allow JavaScript files to be part of the project
+    "checkJs": true,                                 // Check JavaScript files for errors
+    "esModuleInterop": true,                         // Enable esModuleInterop for compatibility with commonjs modules
+    "allowSyntheticDefaultImports": true,            // Allow default imports from modules without a default export
+    "forceConsistentCasingInFileNames": true,        // Enforce consistent casing in file names
+    "strict": true,                                  // Enable all strict type-checking options
+    "noUnusedLocals": true,                          // Report unused locals
+    "noUnusedParameters": true,                      // Report unused function parameters
+    "noFallthroughCasesInSwitch": true,              // Disallow fallthrough between switch cases
+    "exactOptionalPropertyTypes": true,              // Enable exact checking for optional properties
+    "noImplicitReturns": true,                       // Ensure all functions return a value or throw an error
+    "noImplicitOverride": true,                      // Ensure overriding methods are marked with "override"
+    "useUnknownInCatchVariables": true,              // Use `unknown` type for catch variables
+    "rootDir": "./server/src",                       // Where the source TypeScript files are located
+    "outDir": "./dist",                              // Output directory for compiled JavaScript files
+    "sourceMap": true                                // Enable source maps for debugging
   },
-  "include": ["server/**/*"],  // Include all source files
-  "exclude": ["node_modules", "dist"]  // Exclude node_modules and dist folder
+  "include": [
+    "server/src/**/*"                                // Include all TypeScript files in the server/src folder
+  ],
+  "exclude": [
+    "node_modules",                                  // Exclude node_modules directory
+    "dist"                                           // Exclude dist directory from compilation
+  ]
 }
