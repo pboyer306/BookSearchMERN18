@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "ES2020",
     "module": "ESNext",
-    "moduleResolution": "Bundler",
+    "moduleResolution": "Node",   // Change from Bundler to Node
     "skipLibCheck": true,
     "allowJs": true,
     "checkJs": true,
