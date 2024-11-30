@@ -17,8 +17,8 @@
     "noImplicitReturns": true,                       // Ensure all functions return a value or throw an error
     "noImplicitOverride": true,                      // Ensure overriding methods are marked with "override"
     "useUnknownInCatchVariables": true,              // Use `unknown` type for catch variables
-    "rootDir": ".",                       // Where the source TypeScript files are located
-    "outDir": ".dist",                              // Output directory for compiled JavaScript files
+    "rootDir": "./src",                       // Where the source TypeScript files are located
+    "outDir": "./dist",                              // Output directory for compiled JavaScript files
     "sourceMap": true                                // Enable source maps for debugging
   },
   "include": [
