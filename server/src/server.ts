@@ -8,6 +8,7 @@ import { ApolloServer } from "@apollo/server"; // Note: Import from @apollo/serv
 import { expressMiddleware } from "@apollo/server/express4";
 import { typeDefs, resolvers } from "./schemas/index.js";
 import { authenticateToken } from "./utils/auth.js";
+const __dirname = path.resolve()
 
 const server = new ApolloServer({
   typeDefs,
