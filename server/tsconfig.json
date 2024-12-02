@@ -36,6 +36,7 @@
     /* Other Options */
     "removeComments": true /* Remove comments from emitted files. */
   },
-  "include": ["src/**/*"], /* Include all TypeScript and JavaScript files in the 'src' folder. */
+  "include": ["src/**/*"],
+ /* Include all TypeScript and JavaScript files in the 'src' folder. */
   "exclude": ["node_modules", "dist"] /* Exclude the 'node_modules' and 'dist' folders from the compilation process. */
 }
